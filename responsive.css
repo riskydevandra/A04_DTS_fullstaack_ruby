@@ -1,0 +1,82 @@
+@media all and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar .container-icon {
+    width: 100%;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .nav-list .list-item {
+    display: block;
+    border-top: 1px solid white;
+    padding: 10px;
+  }
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+  .primary-icon {
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .active {
+    display: block;
+  }
+  /* bagian awal */
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .col-2 .controller {
+    width: 77%;
+  }
+  .color-box {
+    transform: translateX(75px);
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+  /* akhir bagian awal */
+
+  /* body artikel */
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid > article {
+    justify-content: center;
+  }
+}

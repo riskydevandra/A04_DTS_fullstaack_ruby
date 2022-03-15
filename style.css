@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 3s;
+  animation-name: animatebottom;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* awal navbar */
+.navbar {
+  padding-top: 10px;
+  height: 50px;
+  background-color: white;
+  color: #09142e;
+  font-weight: 800;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.primary-icon {
+  height: 30px;
+  float: left;
+  padding-left: 30px;
+}
+.container-icon p {
+  height: 30px;
+  float: left;
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  float: right;
+  font-size: 15px;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #09142e;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: aqua;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+/* akhir navbar */
+
+/* bagian awal */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-1 {
+  flex-basis: 60%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 .judul {
+  font-size: 80px;
+  color: #09142e;
+  font-weight: 800;
+}
+
+.col-1 .deskripsi {
+  font-size: 20px;
+  color: #09142e;
+  font-weight: 500;
+}
+
+button {
+  width: 220px;
+  border: 0;
+  padding: 20px 20px;
+  outline: none;
+  color: #fff;
+  background: #09142e;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+  font-size: 20px;
+}
+
+button img {
+  width: 30px;
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+
+button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(#ff469f, #ff6062);
+  left: -40px;
+  top: 8px;
+}
+
+.col-2 .controller {
+  width: 80%;
+  float: right;
+}
+/* akhir bagian awal */
+
+/* body artikel */
+.container {
+  padding-top: 20px;
+}
+.container h1 {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.container span {
+  color: rgb(50, 65, 202);
+}
+
+.container p {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid > article {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  transition: transform 0.01s;
+}
+
+.grid > article p {
+  text-align: justify;
+}
+
+.grid > article:hover {
+  transform: translateY(5px);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid > article img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text h3 {
+  text-transform: uppercase;
+}
+
+.text p {
+  margin-top: 10px;
+}
+
+.text button {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.text button:hover {
+  background-color: #000000;
+  color: #fff;
+  transition: 0.2s ease;
+}
+/* akhir artikel */
+
+.pemisah {
+  padding: 30px 30px;
+}
+
+/* awal kisah */
+.text-kisah {
+  padding-top: 20px;
+}
+.text-kisah h1 {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.text-kisah span {
+  color: rgb(50, 65, 202);
+}
+
+.text-kisah p {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.grid-artikel {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr;
+  grid-gap: 10px;
+  width: 1170px;
+}
+
+.item {
+  height: auto;
+}
+
+.item1 {
+  grid-row: span 2;
+  margin-left: 30px;
+}
+
+.gambar {
+  border-radius: 10px;
+  width: 250px;
+}
+
+.gambar1 {
+  border-radius: 10px;
+}
+
+.txt-kisah {
+  color: #b3aeb5;
+}
+/* akhir kisah */
+
+/* awal forum */
+.title {
+  padding-top: 20px;
+}
+.title h1 {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.title span {
+  color: rgb(50, 65, 202);
+}
+
+.title p {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.message {
+  display: flex;
+  border-bottom: 2px solid #dee7ec;
+  width: 100%;
+}
+.message .image {
+  padding: 10px 40px;
+}
+.message-wrapper {
+  float: right;
+}
+
+.user {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.message-wrapper h3 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 1px;
+}
+
+.message-wrapper p {
+  font-size: 12px;
+}
+
+.reply {
+  float: left;
+  font-size: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+.message-icon {
+  float: right;
+  font-size: 10px;
+  font-family: bold;
+  margin-right: 40px;
+}
+
+.btn-telusuri {
+  padding: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.btn {
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  font-size: 18px;
+
+  text-decoration: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+/* footer */
+footer {
+  bottom: 0px;
+  width: 100%;
+  background: #09142e;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 45px 40px;
+}
+.box h2 {
+  font-size: 1.125rem;
+}
+
+.left {
+  text-align: left;
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  display: inline-block;
+  text-align: right;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid > article {
+    justify-content: center;
+  }
+}
